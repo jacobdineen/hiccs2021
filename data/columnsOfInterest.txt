@@ -1,0 +1,1 @@
+["loan_amnt", "term", "int_rate", "installment", "grade", "sub_grade", "emp_length", "home_ownership", "annual_inc",  "inq_last_6mths", "delinq_2yrs", "mths_since_last_delinq", "open_acc", "total_acc", "mths_since_last_major_derog", "dti", "revol_bal", "tot_cur_bal", "open_il_24m", "chargeoff_within_12_mths", "delinq_amnt", "loan_status"]
