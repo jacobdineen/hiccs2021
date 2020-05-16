@@ -23,7 +23,7 @@ def check_existence(file):
         return False
 
 
-def get_cols_of_interest(file='.\\data\\columnsOfInterest.txt'):
+def get_cols_of_interest(file='./data/columnsOfInterest.txt'):
     with open(file, 'r') as filehandle:
         columns = json.load(filehandle)
     return columns

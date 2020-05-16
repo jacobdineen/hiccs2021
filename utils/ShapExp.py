@@ -81,7 +81,7 @@ def save_abs_shap_values_sample(sample_size, plot_obj, gs, models = ['RFC', 'GBC
         df['model'] = model_n
         df['sample_size'] = sample_size
         shap_df = shap_df.append(df)
-    file_name = f'.\\shap_values\\sv_abs_{sample_size}.csv'
+    file_name = f'./shap_values/sv_abs_{sample_size}.csv'
     if not os.path.isfile(file_name):
         shap_df.to_csv(file_name)
         print(f'file saved @ {file_name}')
@@ -107,7 +107,7 @@ def create_dir(verbose=True):
 
 def save_shap_values(svs, verbose=True):
     create_dir(verbose=True)
-    file_name = os.getcwd() + '\\shap_values\\all_shap_values.pkl'
+    file_name = './shap_values/all_shap_values.pkl'
     pickle.dump(svs, open(file_name, 'wb'))
     if verbose:
         print(f'shap values saved @ {file_name}')
@@ -124,7 +124,7 @@ def generate_shap_values(gs_object, model_dict):
         Returns
             A dictionary with all shap values for all models of all sample sizes
     '''
-    file_name = os.getcwd() + '\\shap_values\\all_shap_values.pkl'
+    file_name = './shap_values/all_shap_values.pkl'
     if not check_existence(file_name):
         shap_values_outer = {}
         size = [5000,10000,20000,40000,80000]

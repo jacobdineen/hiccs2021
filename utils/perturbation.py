@@ -10,17 +10,6 @@ import sklearn
 from IPython.display import HTML, display, display_html
 
 
-def save_obj(obj, name):
-    with open('obj/lendingclub/' + name + '.pkl', 'wb') as f:
-        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
-
-
-def load_obj(name):
-    with open('obj/lendingclub/' + name + '.pkl', 'rb') as f:
-        return pickle.load(f)
-
-
-
 
 class Perturb:
     def __init__(self, gs_object, models):

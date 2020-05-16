@@ -10,7 +10,7 @@ from utils.Dataloader import Dataloader, check_existence
 
 
 def create_model_dirs(sample_size, verbose=False):
-    dirName = os.getcwd() + '\\models\\{}'.format(sample_size)
+    dirName = os.getcwd() + './models/{}'.format(sample_size)
     try:
         os.mkdir(dirName)
         if verbose:
@@ -21,7 +21,7 @@ def create_model_dirs(sample_size, verbose=False):
 
 def save_models(sample_size, model, model_name, verbose=False):
     create_model_dirs(sample_size)
-    file_name = os.getcwd() + '\\models\\{}\\{}.pkl'.format(
+    file_name = './models/{}\/{}.pkl'.format(
         sample_size, model_name)
     pickle.dump(model, open(file_name, 'wb'))
     if verbose:
@@ -104,7 +104,7 @@ class Gridsearch:
         #Grid Search, store best estimator & write to disk.
         model_paths = []
         for k, v in self.param_grid.items():
-            file_name =  '.\\models\\{}\\{}.pkl'.format(sample_size, self.model_names[counter])
+            file_name =  './models/{}/{}.pkl'.format(sample_size, self.model_names[counter])
             model_paths.append((self.model_names[counter], file_name))
             if not check_existence(file_name) and not overwrite:
             #         print('Constructing & Grid Searching for Estimator: {}'.format(model_names[counter]))
