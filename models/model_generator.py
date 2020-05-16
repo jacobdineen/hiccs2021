@@ -21,7 +21,7 @@ def create_model_dirs(sample_size, verbose=False):
 
 def save_models(sample_size, model, model_name, verbose=False):
     create_model_dirs(sample_size)
-    file_name = './models/{}\/{}.pkl'.format(
+    file_name = './models/{}/{}.pkl'.format(
         sample_size, model_name)
     pickle.dump(model, open(file_name, 'wb'))
     if verbose:
