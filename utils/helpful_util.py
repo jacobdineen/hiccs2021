@@ -28,6 +28,27 @@ from sklearn.model_selection import (GridSearchCV, StratifiedKFold,
 def load_locally(file_name):
     file = open(file_name,'rb')
     temp = pickle.load(file)
+    if file_name == './data/gridsearch.pkl':
+        temp.model_paths = {5000: [('RFC',
+                                './models/5000/RFC.pkl'),
+                                ('GBC', './models/5000/GBC.pkl'),
+                                ('LR', './models/5000/LR.pkl')],
+                                10000: [('RFC',
+                                './models/10000/RFC.pkl'),
+                                ('GBC', './models/10000/GBC.pkl'),
+                                ('LR', './models/10000/LR.pkl')],
+                                20000: [('RFC',
+                                './models/20000/RFC.pkl'),
+                                ('GBC', './models/20000/GBC.pkl'),
+                                ('LR', './models/20000/LR.pkl')],
+                                40000: [('RFC',
+                                './models/40000/RFC.pkl'),
+                                ('GBC', './models/40000/GBC.pkl'),
+                                ('LR', './models/40000/LR.pkl')],
+                                80000: [('RFC',
+                                './models/80000/RFC.pkl'),
+                                ('GBC', './models/80000/GBC.pkl'),
+                                ('LR', './models/80000/LR.pkl')]}
     return temp
 
 
