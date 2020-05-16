@@ -105,7 +105,7 @@ class Gridsearch:
         model_paths = []
         for k, v in self.param_grid.items():
             file_name =  './models/{}/{}.pkl'.format(sample_size, self.model_names[counter])
-            model_paths.append((self.model_names[counter], file_name))
+            # model_paths.append((self.model_names[counter], file_name))
             if not check_existence(file_name) and not overwrite:
             #         print('Constructing & Grid Searching for Estimator: {}'.format(model_names[counter]))
                 temp_model = GridSearchCV(k,
@@ -128,7 +128,27 @@ class Gridsearch:
             else:
                 print(f'model already exists {file_name}')
                 counter += 1
-        self.model_paths[sample_size] = model_paths
+        # self.model_paths[sample_size] = model_paths
+        self.model_paths = gs.model_paths = {5000: [('RFC',
+                                './models/5000/RFC.pkl'),
+                                ('GBC', './models/5000/GBC.pkl'),
+                                ('LR', './models/5000/LR.pkl')],
+                                10000: [('RFC',
+                                './models/10000/RFC.pkl'),
+                                ('GBC', './models/10000/GBC.pkl'),
+                                ('LR', './models/10000/LR.pkl')],
+                                20000: [('RFC',
+                                './models/20000/RFC.pkl'),
+                                ('GBC', './models/20000/GBC.pkl'),
+                                ('LR', './models/20000/LR.pkl')],
+                                40000: [('RFC',
+                                './models/40000/RFC.pkl'),
+                                ('GBC', './models/40000/GBC.pkl'),
+                                ('LR', './models/40000/LR.pkl')],
+                                80000: [('RFC',
+                                './models/80000/RFC.pkl'),
+                                ('GBC', './models/80000/GBC.pkl'),
+                                ('LR', './models/80000/LR.pkl')]}
     
 
 
