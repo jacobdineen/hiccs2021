@@ -80,6 +80,7 @@ def save_abs_shap_values_sample(sample_size, plot_obj, gs, models = ['RFC', 'GBC
         df = abs(df) 
         df['model'] = model_n
         df['sample_size'] = sample_size
+        df.set_index(['model', 'sample_size'], inplace=True)
         shap_df = shap_df.append(df)
     file_name = f'./shap_values/sv_abs_{sample_size}.csv'
     if not os.path.isfile(file_name):
@@ -152,3 +153,23 @@ def generate_shap_values(gs_object, model_dict):
         shap_values_outer = pickle.load(file)
 
     return shap_values_outer
+
+def plot_abs_shap_values(directory='./shap_values/',
+                         sample_size=5000,
+                         num_feats=10,
+                         normalized=True):
+    df = pd.read_csv(directory + f'sv_abs_{sample_size}.csv')
+    for model in ['RFC', 'GBC', 'LR']:
+        temp = df[df['model'] == model]
+        temp.set_index(['model', 'sample_size'], inplace=True)
+        temp = pd.DataFrame(temp.sum(axis=0)).reset_index()
+        temp.columns = ['feature', 'svs']
+        temp.set_index('feature', inplace=True)
+        if normalized:
+            temp = temp.div(temp.sum(axis=0), axis=1)
+        temp = temp.nlargest(num_feats, 'svs')
+        sns.barplot(x=temp.svs, y=temp.index)
+        plt.title(
+            f'Sum of Absolute Shap Values. Model: {model}, sample_size: {sample_size}, normalized: {normalized}'
+        )
+        plt.show()
