@@ -10,11 +10,12 @@ from utils.Dataloader import check_existence
 
 
 class ExplainShap():
+
     
-    def __init__(self, gs_object, models):
+    def __init__(self, gs_object, models, dev_type = 'stochastic'):
         self.gs_object = gs_object
         self.models = models
-        self.shap = generate_shap_values(gs_object=self.gs_object, model_dict=self.models)
+        self.shap = generate_shap_values(gs_object=self.gs_object, model_dict=self.models, dev_type = dev_type)
         self.class_names = ['Charged Off', 'Fully Paid']
         
         
@@ -106,15 +107,19 @@ def create_dir(verbose=True):
         print("Directory ", dirName, " already exists ")
 
 
-def save_shap_values(svs, verbose=True):
+def save_shap_values(svs, verbose=True, dev_type = 'stochastic'):
     create_dir(verbose=True)
+    if dev_type == 'stochastic':
+        file_name = './shap_values/stochastic_all_shap_values.pkl'
+    else:
+        file_name = './shap_values/all_shap_values.pkl'
     file_name = './shap_values/all_shap_values.pkl'
     pickle.dump(svs, open(file_name, 'wb'))
     if verbose:
         print(f'shap values saved @ {file_name}')
 
 
-def generate_shap_values(gs_object, model_dict):
+def generate_shap_values(gs_object, model_dict, dev_type = 'stochastic'):
     '''
     Generate Shap Attribution values for all models
         Parms
@@ -125,10 +130,16 @@ def generate_shap_values(gs_object, model_dict):
         Returns
             A dictionary with all shap values for all models of all sample sizes
     '''
-    file_name = './shap_values/all_shap_values.pkl'
+    import timeit
+    from utils.Dataloader import check_existence
+    
+    if dev_type == 'stochastic':
+        file_name = './shap_values/stochastic_all_shap_values.pkl'
+    else:
+        file_name = './shap_values/all_shap_values.pkl'
     if not check_existence(file_name):
-        shap_values_outer = {}
-        size = [5000,10000,20000,40000,80000]
+        shap_values_outer = {}    
+        size = gs_object.objects.keys()
 
         for i in size:
             shap_values_inner = {}
@@ -140,11 +151,16 @@ def generate_shap_values(gs_object, model_dict):
             models = [j[1] for j in model_dict[i]]
 
             for m,n in zip(model_names, models):
+                start = timeit.default_timer()
+
                 f = lambda x: n.predict_proba(x)[:, 1]
                 med = X_train_shap.median().values.reshape((1, X_train_shap.shape[1]))
                 explainer = shap.KernelExplainer(f, med)
                 shap_values = explainer.shap_values(X_test_shap, samples =1000, l1_reg = 'aic')
                 shap_values_inner[m] = shap_values
+                
+
+                
             shap_values_outer[i] = shap_values_inner
         save_shap_values(svs = shap_values_outer, verbose=True)
     else:

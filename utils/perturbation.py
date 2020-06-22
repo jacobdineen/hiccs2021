@@ -225,10 +225,10 @@ class Perturb:
         test_dict_df.columns = self.cat_step
         return test_dict_df
 
-def cat_perturb_plot_helper(model, column, sub_cols, perturbation_object):
+def cat_perturb_plot_helper(model, column, sub_cols, perturbation_object, gs_object):
     print(f'Perturbing {column} + SubloanGrades {sub_cols}')
     cat_df = pd.DataFrame()
-    size = [5000,10000,20000,40000,80000]
+    size = gs_object.objects.keys()
     for i in size:
         cat_df_temp = perturbation_object.categorical_perturb_loangrade_overloaded(
             sample_size=i,

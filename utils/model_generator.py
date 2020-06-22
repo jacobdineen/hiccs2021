@@ -9,25 +9,47 @@ from sklearn.neural_network import MLPClassifier
 from utils.Dataloader import Dataloader, check_existence
 
 
-def create_model_dirs(sample_size, verbose=False):
-    dirName = os.getcwd() + '\\models\\{}'.format(sample_size)
+def create_model_dirs(sample_size: int, verbose=False, dev_type='stochastic', num = 0):
+    '''[summary]
+
+    Parameters
+    ----------
+    sample_size : int
+        [description]
+    verbose : bool, optional
+        [description], by default False
+
+    Returns
+    -------
+    [type]
+        [void]
+    '''
+    if dev_type == 'stochastic':
+        dirName = './models_stochastic/{}-{}'.format(sample_size, num)
+        
+    else:
+        dirName = './models/{}'.format(sample_size)
     try:
         os.mkdir(dirName)
         if verbose:
             print("Directory ", dirName, " Created ")
     except FileExistsError:
         pass
+    return None
 
-
-def save_models(sample_size, model, model_name, verbose=False):
-    create_model_dirs(sample_size)
-    file_name = os.getcwd() + '\\models\\{}\\{}.pkl'.format(
-        sample_size, model_name)
+def save_models(sample_size, model, model_name, verbose=False, dev_type='stochastic', num = 0):
+    create_model_dirs(sample_size, dev_type= dev_type ,num = num)
+    if dev_type == 'stochastic':
+        file_name = './models_stochastic/{}-{}/{}.pkl'.format(sample_size, num, model_name)
+    else:
+        file_name = './models/{}/{}.pkl'.format(
+            sample_size, model_name)
     pickle.dump(model, open(file_name, 'wb'))
     if verbose:
         print(f'Model saved @ {file_name}')
 
 
+   
 class Gridsearch:
     '''
     Class to perform Gridsearch w\\ 4 specified estimators
@@ -58,7 +80,6 @@ class Gridsearch:
 
         self.dataloader = dataloader
 
-        # self.model_names = ['RFC', 'GBC', 'LR', 'NN']
         self.model_names = ['RFC', 'GBC', 'LR']
         self.kfold = 5
 
@@ -84,36 +105,38 @@ class Gridsearch:
                 'penalty': ['l1', 'l2'],
                 "solver": ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']
             }
-            # self.ANN: {
-            #     "hidden_layer_sizes": [ (1000, 500, 64, 64)],
-            #     "activation": ['logistic', 'relu'],
-            #     "solver": ['adam'],
-            #     "learning_rate": ['adaptive'],
-            #     'early_stopping': [True],
-            #     "learning_rate_init": [0.001, 0.01]
-            # }
         }
+        
 
-    def generate_models(self, sample_size, overwrite = False):
+    def generate_models(self, sample_size: int, overwrite: str = False, dev_type='stochastic',num = 0):
+        '''[summary]
+
+        Parameters
+        ----------
+        sample_size : int
+            [description]
+        overwrite : str, optional
+            [description], by default False
         '''
-        Parms
-            sample_size: int, specifies how many total samples we want. 
-                        We use datalaoder methods to enforce full class balance before train\\test splits
-        '''
+
         print('-' * 50)
         print('Sample Size = ', sample_size)
         print('-' * 50)
 
-
         X_train, X_test, y_train, y_test, encoder, unrolled_features = self.dataloader.fetch_data(num_samples = sample_size,   train_size=0.8)
-        self.objects[sample_size] = (X_train, X_test, y_train, y_test, encoder, unrolled_features) # We need to store all objects for later use
+        self.objects[sample_size + num] = (X_train, X_test, y_train, y_test, encoder, unrolled_features) # We need to store all objects for later use
 
         counter = 0
         #Grid Search, store best estimator & write to disk.
-        model_paths = []
+        # model_paths = []
         for k, v in self.param_grid.items():
-            file_name = os.getcwd() + '\\models\\{}\\{}.pkl'.format(sample_size, self.model_names[counter])
-            model_paths.append((self.model_names[counter], file_name))
+            if dev_type=='stochastic':
+                path = './models_stochastic/' 
+            else:
+                path = './models/'
+            
+            file_name =  '{}{}-{}/{}.pkl'.format(path, sample_size,num, self.model_names[counter])
+            # model_paths.append((self.model_names[counter], file_name))
             if not check_existence(file_name) and not overwrite:
             #         print('Constructing & Grid Searching for Estimator: {}'.format(model_names[counter]))
                 temp_model = GridSearchCV(k,
@@ -130,10 +153,14 @@ class Gridsearch:
 
 
                 save_models(sample_size, temp_model.best_estimator_,
-                            self.model_names[counter])
+                            self.model_names[counter], num = num)
 
                 counter += 1
             else:
                 print(f'model already exists {file_name}')
                 counter += 1
-        self.model_paths[sample_size] = model_paths
+        # self.model_paths[sample_size] = model_paths
+
+
+
+

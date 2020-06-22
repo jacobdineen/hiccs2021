@@ -1,0 +1,1141 @@
+,feature,Feature_Importance,sample_size,model
+0,Term: 36 months,0.0062,20000,rfc
+1,Term: 60 months,0.0056,20000,rfc
+2,Loan_Grade:A,0.0136,20000,rfc
+3,Loan_Grade:B,0.0086,20000,rfc
+4,Loan_Grade:C,0.0062,20000,rfc
+5,Loan_Grade:D,0.0065,20000,rfc
+6,Loan_Grade:E,0.0034,20000,rfc
+7,Loan_Grade:F,0.0015,20000,rfc
+8,Loan_Grade:G,0.0008,20000,rfc
+9,Loan_SubGrade:A1,0.0055,20000,rfc
+10,Loan_SubGrade:A2,0.0022,20000,rfc
+11,Loan_SubGrade:A3,0.0025,20000,rfc
+12,Loan_SubGrade:A4,0.0025,20000,rfc
+13,Loan_SubGrade:A5,0.0023,20000,rfc
+14,Loan_SubGrade:B1,0.0052,20000,rfc
+15,Loan_SubGrade:B2,0.0065,20000,rfc
+16,Loan_SubGrade:B3,0.0041,20000,rfc
+17,Loan_SubGrade:B4,0.0046,20000,rfc
+18,Loan_SubGrade:B5,0.0058,20000,rfc
+19,Loan_SubGrade:C1,0.0065,20000,rfc
+20,Loan_SubGrade:C2,0.0047,20000,rfc
+21,Loan_SubGrade:C3,0.0048,20000,rfc
+22,Loan_SubGrade:C4,0.0051,20000,rfc
+23,Loan_SubGrade:C5,0.0045,20000,rfc
+24,Loan_SubGrade:D1,0.0038,20000,rfc
+25,Loan_SubGrade:D2,0.0035,20000,rfc
+26,Loan_SubGrade:D3,0.0028,20000,rfc
+27,Loan_SubGrade:D4,0.003,20000,rfc
+28,Loan_SubGrade:D5,0.003,20000,rfc
+29,Loan_SubGrade:E1,0.0015,20000,rfc
+30,Loan_SubGrade:E2,0.0012,20000,rfc
+31,Loan_SubGrade:E3,0.002,20000,rfc
+32,Loan_SubGrade:E4,0.0015,20000,rfc
+33,Loan_SubGrade:E5,0.0015,20000,rfc
+34,Loan_SubGrade:F1,0.0008,20000,rfc
+35,Loan_SubGrade:F2,0.0005,20000,rfc
+36,Loan_SubGrade:F3,0.0005,20000,rfc
+37,Loan_SubGrade:F4,0.0005,20000,rfc
+38,Loan_SubGrade:F5,0.0003,20000,rfc
+39,Loan_SubGrade:G1,0.0005,20000,rfc
+40,Loan_SubGrade:G2,0.0001,20000,rfc
+41,Loan_SubGrade:G3,0.0,20000,rfc
+42,Loan_SubGrade:G4,0.0,20000,rfc
+43,Loan_SubGrade:G5,0.0,20000,rfc
+44,Employment_Length:1 year,0.0051,20000,rfc
+45,Employment_Length:10+ years,0.0091,20000,rfc
+46,Employment_Length:2 years,0.0058,20000,rfc
+47,Employment_Length:3 years,0.0057,20000,rfc
+48,Employment_Length:4 years,0.0051,20000,rfc
+49,Employment_Length:5 years,0.0048,20000,rfc
+50,Employment_Length:6 years,0.0038,20000,rfc
+51,Employment_Length:7 years,0.0032,20000,rfc
+52,Employment_Length:8 years,0.0034,20000,rfc
+53,Employment_Length:9 years,0.0026,20000,rfc
+54,Employment_Length:< 1 year,0.006,20000,rfc
+55,Employment_Length:unknown,0.0069,20000,rfc
+56,Home_Ownership:ANY,0.0001,20000,rfc
+57,Home_Ownership:MORTGAGE,0.0088,20000,rfc
+58,Home_Ownership:OWN,0.0051,20000,rfc
+59,Home_Ownership:RENT,0.0083,20000,rfc
+60,loan_amnt,0.0513,20000,rfc
+61,int_rate,0.2033,20000,rfc
+62,installment,0.0657,20000,rfc
+63,annual_inc,0.0568,20000,rfc
+64,inq_last_6mths,0.0185,20000,rfc
+65,delinq_2yrs,0.011,20000,rfc
+66,mths_since_last_delinq,0.0311,20000,rfc
+67,open_acc,0.0436,20000,rfc
+68,total_acc,0.0514,20000,rfc
+69,mths_since_last_major_derog,0.0212,20000,rfc
+70,dti,0.0624,20000,rfc
+71,revol_bal,0.0573,20000,rfc
+72,tot_cur_bal,0.0639,20000,rfc
+73,open_il_24m,0.0313,20000,rfc
+74,chargeoff_within_12_mths,0.0009,20000,rfc
+75,delinq_amnt,0.0003,20000,rfc
+0,Term: 36 months,0.0,20000,gbc
+1,Term: 60 months,0.0,20000,gbc
+2,Loan_Grade:A,0.0523,20000,gbc
+3,Loan_Grade:B,0.026,20000,gbc
+4,Loan_Grade:C,0.0229,20000,gbc
+5,Loan_Grade:D,0.0052,20000,gbc
+6,Loan_Grade:E,0.0011,20000,gbc
+7,Loan_Grade:F,0.0024,20000,gbc
+8,Loan_Grade:G,0.0011,20000,gbc
+9,Loan_SubGrade:A1,0.0001,20000,gbc
+10,Loan_SubGrade:A2,0.0,20000,gbc
+11,Loan_SubGrade:A3,0.0002,20000,gbc
+12,Loan_SubGrade:A4,0.0034,20000,gbc
+13,Loan_SubGrade:A5,0.0003,20000,gbc
+14,Loan_SubGrade:B1,0.0092,20000,gbc
+15,Loan_SubGrade:B2,0.0117,20000,gbc
+16,Loan_SubGrade:B3,0.0066,20000,gbc
+17,Loan_SubGrade:B4,0.015,20000,gbc
+18,Loan_SubGrade:B5,0.0238,20000,gbc
+19,Loan_SubGrade:C1,0.0036,20000,gbc
+20,Loan_SubGrade:C2,0.017,20000,gbc
+21,Loan_SubGrade:C3,0.0084,20000,gbc
+22,Loan_SubGrade:C4,0.005,20000,gbc
+23,Loan_SubGrade:C5,0.0023,20000,gbc
+24,Loan_SubGrade:D1,0.0039,20000,gbc
+25,Loan_SubGrade:D2,0.0086,20000,gbc
+26,Loan_SubGrade:D3,0.0076,20000,gbc
+27,Loan_SubGrade:D4,0.0051,20000,gbc
+28,Loan_SubGrade:D5,0.0043,20000,gbc
+29,Loan_SubGrade:E1,0.003,20000,gbc
+30,Loan_SubGrade:E2,0.0012,20000,gbc
+31,Loan_SubGrade:E3,0.0033,20000,gbc
+32,Loan_SubGrade:E4,0.0034,20000,gbc
+33,Loan_SubGrade:E5,0.0063,20000,gbc
+34,Loan_SubGrade:F1,0.0006,20000,gbc
+35,Loan_SubGrade:F2,0.0001,20000,gbc
+36,Loan_SubGrade:F3,0.0003,20000,gbc
+37,Loan_SubGrade:F4,0.0004,20000,gbc
+38,Loan_SubGrade:F5,0.0002,20000,gbc
+39,Loan_SubGrade:G1,0.0,20000,gbc
+40,Loan_SubGrade:G2,0.0,20000,gbc
+41,Loan_SubGrade:G3,0.0,20000,gbc
+42,Loan_SubGrade:G4,0.0,20000,gbc
+43,Loan_SubGrade:G5,0.0,20000,gbc
+44,Employment_Length:1 year,0.0003,20000,gbc
+45,Employment_Length:10+ years,0.0002,20000,gbc
+46,Employment_Length:2 years,0.0,20000,gbc
+47,Employment_Length:3 years,0.0002,20000,gbc
+48,Employment_Length:4 years,0.0002,20000,gbc
+49,Employment_Length:5 years,0.0002,20000,gbc
+50,Employment_Length:6 years,0.0001,20000,gbc
+51,Employment_Length:7 years,0.0004,20000,gbc
+52,Employment_Length:8 years,0.0002,20000,gbc
+53,Employment_Length:9 years,0.0001,20000,gbc
+54,Employment_Length:< 1 year,0.0003,20000,gbc
+55,Employment_Length:unknown,0.0017,20000,gbc
+56,Home_Ownership:ANY,0.0,20000,gbc
+57,Home_Ownership:MORTGAGE,0.0126,20000,gbc
+58,Home_Ownership:OWN,0.0002,20000,gbc
+59,Home_Ownership:RENT,0.0006,20000,gbc
+60,loan_amnt,0.01,20000,gbc
+61,int_rate,0.6351,20000,gbc
+62,installment,0.017,20000,gbc
+63,annual_inc,0.0078,20000,gbc
+64,inq_last_6mths,0.0032,20000,gbc
+65,delinq_2yrs,0.0012,20000,gbc
+66,mths_since_last_delinq,0.0011,20000,gbc
+67,open_acc,0.0016,20000,gbc
+68,total_acc,0.0055,20000,gbc
+69,mths_since_last_major_derog,0.0016,20000,gbc
+70,dti,0.0082,20000,gbc
+71,revol_bal,0.0059,20000,gbc
+72,tot_cur_bal,0.0148,20000,gbc
+73,open_il_24m,0.003,20000,gbc
+74,chargeoff_within_12_mths,0.0005,20000,gbc
+75,delinq_amnt,0.0,20000,gbc
+0,Term: 36 months,-41.6015,20000,logit
+1,Term: 60 months,-41.7924,20000,logit
+2,Loan_Grade:A,36.9892,20000,logit
+3,Loan_Grade:B,7.6264,20000,logit
+4,Loan_Grade:C,-17.2034,20000,logit
+5,Loan_Grade:D,-52.0833,20000,logit
+6,Loan_Grade:E,-95.4415,20000,logit
+7,Loan_Grade:F,-138.6737,20000,logit
+8,Loan_Grade:G,-148.1704,20000,logit
+9,Loan_SubGrade:A1,15.7055,20000,logit
+10,Loan_SubGrade:A2,10.0205,20000,logit
+11,Loan_SubGrade:A3,5.2662,20000,logit
+12,Loan_SubGrade:A4,0.0,20000,logit
+13,Loan_SubGrade:A5,-5.1698,20000,logit
+14,Loan_SubGrade:B1,11.9275,20000,logit
+15,Loan_SubGrade:B2,8.5377,20000,logit
+16,Loan_SubGrade:B3,3.9571,20000,logit
+17,Loan_SubGrade:B4,0.0,20000,logit
+18,Loan_SubGrade:B5,-8.9464,20000,logit
+19,Loan_SubGrade:C1,9.2192,20000,logit
+20,Loan_SubGrade:C2,1.8507,20000,logit
+21,Loan_SubGrade:C3,-2.3185,20000,logit
+22,Loan_SubGrade:C4,-10.9164,20000,logit
+23,Loan_SubGrade:C5,-17.6348,20000,logit
+24,Loan_SubGrade:D1,8.3243,20000,logit
+25,Loan_SubGrade:D2,0.7437,20000,logit
+26,Loan_SubGrade:D3,-6.99,20000,logit
+27,Loan_SubGrade:D4,-14.7497,20000,logit
+28,Loan_SubGrade:D5,-26.5149,20000,logit
+29,Loan_SubGrade:E1,8.5185,20000,logit
+30,Loan_SubGrade:E2,0.2244,20000,logit
+31,Loan_SubGrade:E3,-7.3926,20000,logit
+32,Loan_SubGrade:E4,-14.6422,20000,logit
+33,Loan_SubGrade:E5,-22.3093,20000,logit
+34,Loan_SubGrade:F1,7.3995,20000,logit
+35,Loan_SubGrade:F2,0.002,20000,logit
+36,Loan_SubGrade:F3,-3.4561,20000,logit
+37,Loan_SubGrade:F4,-7.4098,20000,logit
+38,Loan_SubGrade:F5,-8.7091,20000,logit
+39,Loan_SubGrade:G1,-0.2538,20000,logit
+40,Loan_SubGrade:G2,0.0,20000,logit
+41,Loan_SubGrade:G3,0.2342,20000,logit
+42,Loan_SubGrade:G4,0.0,20000,logit
+43,Loan_SubGrade:G5,-1.9921,20000,logit
+44,Employment_Length:1 year,-0.1416,20000,logit
+45,Employment_Length:10+ years,0.0446,20000,logit
+46,Employment_Length:2 years,-0.0786,20000,logit
+47,Employment_Length:3 years,-0.0648,20000,logit
+48,Employment_Length:4 years,-0.0962,20000,logit
+49,Employment_Length:5 years,0.0415,20000,logit
+50,Employment_Length:6 years,0.1213,20000,logit
+51,Employment_Length:7 years,-0.0839,20000,logit
+52,Employment_Length:8 years,0.0,20000,logit
+53,Employment_Length:9 years,0.0,20000,logit
+54,Employment_Length:< 1 year,0.0315,20000,logit
+55,Employment_Length:unknown,-0.5364,20000,logit
+56,Home_Ownership:ANY,0.0,20000,logit
+57,Home_Ownership:MORTGAGE,-3.635,20000,logit
+58,Home_Ownership:OWN,-3.9114,20000,logit
+59,Home_Ownership:RENT,-4.0222,20000,logit
+60,loan_amnt,0.0,20000,logit
+61,int_rate,7.9536,20000,logit
+62,installment,-0.0016,20000,logit
+63,annual_inc,0.0,20000,logit
+64,inq_last_6mths,-0.0985,20000,logit
+65,delinq_2yrs,-0.0694,20000,logit
+66,mths_since_last_delinq,0.0022,20000,logit
+67,open_acc,-0.0059,20000,logit
+68,total_acc,0.0097,20000,logit
+69,mths_since_last_major_derog,-0.0007,20000,logit
+70,dti,-0.001,20000,logit
+71,revol_bal,-0.0,20000,logit
+72,tot_cur_bal,0.0,20000,logit
+73,open_il_24m,0.0359,20000,logit
+74,chargeoff_within_12_mths,-0.0072,20000,logit
+75,delinq_amnt,-0.004,20000,logit
+0,Term: 36 months,0.0059,20001,rfc
+1,Term: 60 months,0.0058,20001,rfc
+2,Loan_Grade:A,0.0158,20001,rfc
+3,Loan_Grade:B,0.0086,20001,rfc
+4,Loan_Grade:C,0.0065,20001,rfc
+5,Loan_Grade:D,0.006,20001,rfc
+6,Loan_Grade:E,0.0036,20001,rfc
+7,Loan_Grade:F,0.0023,20001,rfc
+8,Loan_Grade:G,0.0008,20001,rfc
+9,Loan_SubGrade:A1,0.0056,20001,rfc
+10,Loan_SubGrade:A2,0.0019,20001,rfc
+11,Loan_SubGrade:A3,0.0036,20001,rfc
+12,Loan_SubGrade:A4,0.003,20001,rfc
+13,Loan_SubGrade:A5,0.0029,20001,rfc
+14,Loan_SubGrade:B1,0.0046,20001,rfc
+15,Loan_SubGrade:B2,0.0055,20001,rfc
+16,Loan_SubGrade:B3,0.0038,20001,rfc
+17,Loan_SubGrade:B4,0.0047,20001,rfc
+18,Loan_SubGrade:B5,0.0057,20001,rfc
+19,Loan_SubGrade:C1,0.0068,20001,rfc
+20,Loan_SubGrade:C2,0.0044,20001,rfc
+21,Loan_SubGrade:C3,0.0044,20001,rfc
+22,Loan_SubGrade:C4,0.0053,20001,rfc
+23,Loan_SubGrade:C5,0.0046,20001,rfc
+24,Loan_SubGrade:D1,0.0043,20001,rfc
+25,Loan_SubGrade:D2,0.0036,20001,rfc
+26,Loan_SubGrade:D3,0.0031,20001,rfc
+27,Loan_SubGrade:D4,0.003,20001,rfc
+28,Loan_SubGrade:D5,0.0031,20001,rfc
+29,Loan_SubGrade:E1,0.0015,20001,rfc
+30,Loan_SubGrade:E2,0.0013,20001,rfc
+31,Loan_SubGrade:E3,0.0017,20001,rfc
+32,Loan_SubGrade:E4,0.0015,20001,rfc
+33,Loan_SubGrade:E5,0.0018,20001,rfc
+34,Loan_SubGrade:F1,0.0007,20001,rfc
+35,Loan_SubGrade:F2,0.0005,20001,rfc
+36,Loan_SubGrade:F3,0.0003,20001,rfc
+37,Loan_SubGrade:F4,0.0003,20001,rfc
+38,Loan_SubGrade:F5,0.0003,20001,rfc
+39,Loan_SubGrade:G1,0.0005,20001,rfc
+40,Loan_SubGrade:G2,0.0001,20001,rfc
+41,Loan_SubGrade:G3,0.0001,20001,rfc
+42,Loan_SubGrade:G4,0.0,20001,rfc
+43,Loan_SubGrade:G5,0.0001,20001,rfc
+44,Employment_Length:1 year,0.005,20001,rfc
+45,Employment_Length:10+ years,0.0095,20001,rfc
+46,Employment_Length:2 years,0.0057,20001,rfc
+47,Employment_Length:3 years,0.0055,20001,rfc
+48,Employment_Length:4 years,0.0049,20001,rfc
+49,Employment_Length:5 years,0.0049,20001,rfc
+50,Employment_Length:6 years,0.0038,20001,rfc
+51,Employment_Length:7 years,0.0034,20001,rfc
+52,Employment_Length:8 years,0.0037,20001,rfc
+53,Employment_Length:9 years,0.0023,20001,rfc
+54,Employment_Length:< 1 year,0.0059,20001,rfc
+55,Employment_Length:unknown,0.0068,20001,rfc
+56,Home_Ownership:ANY,0.0001,20001,rfc
+57,Home_Ownership:MORTGAGE,0.01,20001,rfc
+58,Home_Ownership:OWN,0.0048,20001,rfc
+59,Home_Ownership:RENT,0.0082,20001,rfc
+60,loan_amnt,0.0516,20001,rfc
+61,int_rate,0.1936,20001,rfc
+62,installment,0.0665,20001,rfc
+63,annual_inc,0.0573,20001,rfc
+64,inq_last_6mths,0.019,20001,rfc
+65,delinq_2yrs,0.0112,20001,rfc
+66,mths_since_last_delinq,0.0327,20001,rfc
+67,open_acc,0.0444,20001,rfc
+68,total_acc,0.0506,20001,rfc
+69,mths_since_last_major_derog,0.0204,20001,rfc
+70,dti,0.0626,20001,rfc
+71,revol_bal,0.0577,20001,rfc
+72,tot_cur_bal,0.0663,20001,rfc
+73,open_il_24m,0.0303,20001,rfc
+74,chargeoff_within_12_mths,0.0009,20001,rfc
+75,delinq_amnt,0.0002,20001,rfc
+0,Term: 36 months,0.0001,20001,gbc
+1,Term: 60 months,0.0,20001,gbc
+2,Loan_Grade:A,0.0468,20001,gbc
+3,Loan_Grade:B,0.0173,20001,gbc
+4,Loan_Grade:C,0.0362,20001,gbc
+5,Loan_Grade:D,0.0059,20001,gbc
+6,Loan_Grade:E,0.0038,20001,gbc
+7,Loan_Grade:F,0.0022,20001,gbc
+8,Loan_Grade:G,0.0006,20001,gbc
+9,Loan_SubGrade:A1,0.0001,20001,gbc
+10,Loan_SubGrade:A2,0.0,20001,gbc
+11,Loan_SubGrade:A3,0.0001,20001,gbc
+12,Loan_SubGrade:A4,0.0049,20001,gbc
+13,Loan_SubGrade:A5,0.0005,20001,gbc
+14,Loan_SubGrade:B1,0.0023,20001,gbc
+15,Loan_SubGrade:B2,0.0108,20001,gbc
+16,Loan_SubGrade:B3,0.0047,20001,gbc
+17,Loan_SubGrade:B4,0.0156,20001,gbc
+18,Loan_SubGrade:B5,0.0265,20001,gbc
+19,Loan_SubGrade:C1,0.0012,20001,gbc
+20,Loan_SubGrade:C2,0.0129,20001,gbc
+21,Loan_SubGrade:C3,0.0123,20001,gbc
+22,Loan_SubGrade:C4,0.0066,20001,gbc
+23,Loan_SubGrade:C5,0.0008,20001,gbc
+24,Loan_SubGrade:D1,0.0045,20001,gbc
+25,Loan_SubGrade:D2,0.0179,20001,gbc
+26,Loan_SubGrade:D3,0.0123,20001,gbc
+27,Loan_SubGrade:D4,0.0059,20001,gbc
+28,Loan_SubGrade:D5,0.003,20001,gbc
+29,Loan_SubGrade:E1,0.0005,20001,gbc
+30,Loan_SubGrade:E2,0.0017,20001,gbc
+31,Loan_SubGrade:E3,0.0023,20001,gbc
+32,Loan_SubGrade:E4,0.0033,20001,gbc
+33,Loan_SubGrade:E5,0.0042,20001,gbc
+34,Loan_SubGrade:F1,0.0008,20001,gbc
+35,Loan_SubGrade:F2,0.0002,20001,gbc
+36,Loan_SubGrade:F3,0.0002,20001,gbc
+37,Loan_SubGrade:F4,0.0002,20001,gbc
+38,Loan_SubGrade:F5,0.0001,20001,gbc
+39,Loan_SubGrade:G1,0.0,20001,gbc
+40,Loan_SubGrade:G2,0.0,20001,gbc
+41,Loan_SubGrade:G3,0.0001,20001,gbc
+42,Loan_SubGrade:G4,0.0,20001,gbc
+43,Loan_SubGrade:G5,0.0001,20001,gbc
+44,Employment_Length:1 year,0.0003,20001,gbc
+45,Employment_Length:10+ years,0.0002,20001,gbc
+46,Employment_Length:2 years,0.0001,20001,gbc
+47,Employment_Length:3 years,0.0003,20001,gbc
+48,Employment_Length:4 years,0.0001,20001,gbc
+49,Employment_Length:5 years,0.0001,20001,gbc
+50,Employment_Length:6 years,0.0001,20001,gbc
+51,Employment_Length:7 years,0.0002,20001,gbc
+52,Employment_Length:8 years,0.0001,20001,gbc
+53,Employment_Length:9 years,0.0001,20001,gbc
+54,Employment_Length:< 1 year,0.0006,20001,gbc
+55,Employment_Length:unknown,0.0019,20001,gbc
+56,Home_Ownership:ANY,0.0,20001,gbc
+57,Home_Ownership:MORTGAGE,0.012,20001,gbc
+58,Home_Ownership:OWN,0.0003,20001,gbc
+59,Home_Ownership:RENT,0.001,20001,gbc
+60,loan_amnt,0.0077,20001,gbc
+61,int_rate,0.6284,20001,gbc
+62,installment,0.0218,20001,gbc
+63,annual_inc,0.008,20001,gbc
+64,inq_last_6mths,0.0032,20001,gbc
+65,delinq_2yrs,0.0011,20001,gbc
+66,mths_since_last_delinq,0.0012,20001,gbc
+67,open_acc,0.0014,20001,gbc
+68,total_acc,0.0052,20001,gbc
+69,mths_since_last_major_derog,0.0012,20001,gbc
+70,dti,0.0094,20001,gbc
+71,revol_bal,0.0063,20001,gbc
+72,tot_cur_bal,0.0143,20001,gbc
+73,open_il_24m,0.0035,20001,gbc
+74,chargeoff_within_12_mths,0.0001,20001,gbc
+75,delinq_amnt,0.0,20001,gbc
+0,Term: 36 months,-27.5624,20001,logit
+1,Term: 60 months,-27.6893,20001,logit
+2,Loan_Grade:A,25.045,20001,logit
+3,Loan_Grade:B,1.231,20001,logit
+4,Loan_Grade:C,-17.9686,20001,logit
+5,Loan_Grade:D,-47.6338,20001,logit
+6,Loan_Grade:E,-83.5837,20001,logit
+7,Loan_Grade:F,-119.2502,20001,logit
+8,Loan_Grade:G,-126.7289,20001,logit
+9,Loan_SubGrade:A1,12.7483,20001,logit
+10,Loan_SubGrade:A2,8.0902,20001,logit
+11,Loan_SubGrade:A3,4.1919,20001,logit
+12,Loan_SubGrade:A4,-0.0052,20001,logit
+13,Loan_SubGrade:A5,-4.3757,20001,logit
+14,Loan_SubGrade:B1,9.2823,20001,logit
+15,Loan_SubGrade:B2,6.5615,20001,logit
+16,Loan_SubGrade:B3,2.7661,20001,logit
+17,Loan_SubGrade:B4,-0.4494,20001,logit
+18,Loan_SubGrade:B5,-7.8581,20001,logit
+19,Loan_SubGrade:C1,6.0303,20001,logit
+20,Loan_SubGrade:C2,0.0018,20001,logit
+21,Loan_SubGrade:C3,-3.463,20001,logit
+22,Loan_SubGrade:C4,-10.3238,20001,logit
+23,Loan_SubGrade:C5,-16.1101,20001,logit
+24,Loan_SubGrade:D1,6.2263,20001,logit
+25,Loan_SubGrade:D2,0.0,20001,logit
+26,Loan_SubGrade:D3,-6.4188,20001,logit
+27,Loan_SubGrade:D4,-12.6927,20001,logit
+28,Loan_SubGrade:D5,-22.3666,20001,logit
+29,Loan_SubGrade:E1,6.741,20001,logit
+30,Loan_SubGrade:E2,0.0,20001,logit
+31,Loan_SubGrade:E3,-6.3889,20001,logit
+32,Loan_SubGrade:E4,-12.2625,20001,logit
+33,Loan_SubGrade:E5,-18.4629,20001,logit
+34,Loan_SubGrade:F1,5.515,20001,logit
+35,Loan_SubGrade:F2,0.0,20001,logit
+36,Loan_SubGrade:F3,-2.7941,20001,logit
+37,Loan_SubGrade:F4,-6.2292,20001,logit
+38,Loan_SubGrade:F5,-7.3114,20001,logit
+39,Loan_SubGrade:G1,-0.7949,20001,logit
+40,Loan_SubGrade:G2,0.0,20001,logit
+41,Loan_SubGrade:G3,0.0,20001,logit
+42,Loan_SubGrade:G4,0.0,20001,logit
+43,Loan_SubGrade:G5,-1.8136,20001,logit
+44,Employment_Length:1 year,-0.1592,20001,logit
+45,Employment_Length:10+ years,0.0,20001,logit
+46,Employment_Length:2 years,-0.0463,20001,logit
+47,Employment_Length:3 years,-0.0002,20001,logit
+48,Employment_Length:4 years,-0.0784,20001,logit
+49,Employment_Length:5 years,-0.0369,20001,logit
+50,Employment_Length:6 years,0.1331,20001,logit
+51,Employment_Length:7 years,-0.0863,20001,logit
+52,Employment_Length:8 years,0.0,20001,logit
+53,Employment_Length:9 years,0.0,20001,logit
+54,Employment_Length:< 1 year,0.1041,20001,logit
+55,Employment_Length:unknown,-0.5256,20001,logit
+56,Home_Ownership:ANY,0.0,20001,logit
+57,Home_Ownership:MORTGAGE,-18.3393,20001,logit
+58,Home_Ownership:OWN,-18.5878,20001,logit
+59,Home_Ownership:RENT,-18.6953,20001,logit
+60,loan_amnt,0.0,20001,logit
+61,int_rate,6.5226,20001,logit
+62,installment,-0.0012,20001,logit
+63,annual_inc,0.0,20001,logit
+64,inq_last_6mths,-0.0935,20001,logit
+65,delinq_2yrs,-0.0292,20001,logit
+66,mths_since_last_delinq,0.0007,20001,logit
+67,open_acc,-0.0043,20001,logit
+68,total_acc,0.0103,20001,logit
+69,mths_since_last_major_derog,-0.0008,20001,logit
+70,dti,-0.0029,20001,logit
+71,revol_bal,-0.0,20001,logit
+72,tot_cur_bal,0.0,20001,logit
+73,open_il_24m,0.0404,20001,logit
+74,chargeoff_within_12_mths,-0.0248,20001,logit
+75,delinq_amnt,-0.0016,20001,logit
+0,Term: 36 months,0.0055,20002,rfc
+1,Term: 60 months,0.0056,20002,rfc
+2,Loan_Grade:A,0.0165,20002,rfc
+3,Loan_Grade:B,0.0081,20002,rfc
+4,Loan_Grade:C,0.0063,20002,rfc
+5,Loan_Grade:D,0.0067,20002,rfc
+6,Loan_Grade:E,0.0034,20002,rfc
+7,Loan_Grade:F,0.0023,20002,rfc
+8,Loan_Grade:G,0.0009,20002,rfc
+9,Loan_SubGrade:A1,0.0054,20002,rfc
+10,Loan_SubGrade:A2,0.0023,20002,rfc
+11,Loan_SubGrade:A3,0.0021,20002,rfc
+12,Loan_SubGrade:A4,0.0027,20002,rfc
+13,Loan_SubGrade:A5,0.0026,20002,rfc
+14,Loan_SubGrade:B1,0.0051,20002,rfc
+15,Loan_SubGrade:B2,0.006,20002,rfc
+16,Loan_SubGrade:B3,0.004,20002,rfc
+17,Loan_SubGrade:B4,0.0054,20002,rfc
+18,Loan_SubGrade:B5,0.0057,20002,rfc
+19,Loan_SubGrade:C1,0.0053,20002,rfc
+20,Loan_SubGrade:C2,0.0044,20002,rfc
+21,Loan_SubGrade:C3,0.0047,20002,rfc
+22,Loan_SubGrade:C4,0.0048,20002,rfc
+23,Loan_SubGrade:C5,0.0043,20002,rfc
+24,Loan_SubGrade:D1,0.0037,20002,rfc
+25,Loan_SubGrade:D2,0.0036,20002,rfc
+26,Loan_SubGrade:D3,0.0031,20002,rfc
+27,Loan_SubGrade:D4,0.0027,20002,rfc
+28,Loan_SubGrade:D5,0.0034,20002,rfc
+29,Loan_SubGrade:E1,0.0016,20002,rfc
+30,Loan_SubGrade:E2,0.0012,20002,rfc
+31,Loan_SubGrade:E3,0.0018,20002,rfc
+32,Loan_SubGrade:E4,0.0015,20002,rfc
+33,Loan_SubGrade:E5,0.0017,20002,rfc
+34,Loan_SubGrade:F1,0.0007,20002,rfc
+35,Loan_SubGrade:F2,0.0004,20002,rfc
+36,Loan_SubGrade:F3,0.0003,20002,rfc
+37,Loan_SubGrade:F4,0.0005,20002,rfc
+38,Loan_SubGrade:F5,0.0004,20002,rfc
+39,Loan_SubGrade:G1,0.0005,20002,rfc
+40,Loan_SubGrade:G2,0.0002,20002,rfc
+41,Loan_SubGrade:G3,0.0001,20002,rfc
+42,Loan_SubGrade:G4,0.0,20002,rfc
+43,Loan_SubGrade:G5,0.0001,20002,rfc
+44,Employment_Length:1 year,0.0049,20002,rfc
+45,Employment_Length:10+ years,0.0092,20002,rfc
+46,Employment_Length:2 years,0.0058,20002,rfc
+47,Employment_Length:3 years,0.0055,20002,rfc
+48,Employment_Length:4 years,0.0047,20002,rfc
+49,Employment_Length:5 years,0.005,20002,rfc
+50,Employment_Length:6 years,0.004,20002,rfc
+51,Employment_Length:7 years,0.0036,20002,rfc
+52,Employment_Length:8 years,0.0034,20002,rfc
+53,Employment_Length:9 years,0.0023,20002,rfc
+54,Employment_Length:< 1 year,0.0061,20002,rfc
+55,Employment_Length:unknown,0.0068,20002,rfc
+56,Home_Ownership:ANY,0.0002,20002,rfc
+57,Home_Ownership:MORTGAGE,0.0104,20002,rfc
+58,Home_Ownership:OWN,0.0049,20002,rfc
+59,Home_Ownership:RENT,0.0083,20002,rfc
+60,loan_amnt,0.0526,20002,rfc
+61,int_rate,0.1962,20002,rfc
+62,installment,0.0644,20002,rfc
+63,annual_inc,0.0581,20002,rfc
+64,inq_last_6mths,0.0197,20002,rfc
+65,delinq_2yrs,0.011,20002,rfc
+66,mths_since_last_delinq,0.0318,20002,rfc
+67,open_acc,0.0451,20002,rfc
+68,total_acc,0.0519,20002,rfc
+69,mths_since_last_major_derog,0.0212,20002,rfc
+70,dti,0.0619,20002,rfc
+71,revol_bal,0.0581,20002,rfc
+72,tot_cur_bal,0.0636,20002,rfc
+73,open_il_24m,0.0308,20002,rfc
+74,chargeoff_within_12_mths,0.0011,20002,rfc
+75,delinq_amnt,0.0002,20002,rfc
+0,Term: 36 months,0.0001,20002,gbc
+1,Term: 60 months,0.0,20002,gbc
+2,Loan_Grade:A,0.0333,20002,gbc
+3,Loan_Grade:B,0.0259,20002,gbc
+4,Loan_Grade:C,0.024,20002,gbc
+5,Loan_Grade:D,0.0035,20002,gbc
+6,Loan_Grade:E,0.0037,20002,gbc
+7,Loan_Grade:F,0.0022,20002,gbc
+8,Loan_Grade:G,0.0007,20002,gbc
+9,Loan_SubGrade:A1,0.0002,20002,gbc
+10,Loan_SubGrade:A2,0.0,20002,gbc
+11,Loan_SubGrade:A3,0.001,20002,gbc
+12,Loan_SubGrade:A4,0.01,20002,gbc
+13,Loan_SubGrade:A5,0.0014,20002,gbc
+14,Loan_SubGrade:B1,0.0105,20002,gbc
+15,Loan_SubGrade:B2,0.0124,20002,gbc
+16,Loan_SubGrade:B3,0.0044,20002,gbc
+17,Loan_SubGrade:B4,0.0114,20002,gbc
+18,Loan_SubGrade:B5,0.0101,20002,gbc
+19,Loan_SubGrade:C1,0.001,20002,gbc
+20,Loan_SubGrade:C2,0.0101,20002,gbc
+21,Loan_SubGrade:C3,0.0075,20002,gbc
+22,Loan_SubGrade:C4,0.0121,20002,gbc
+23,Loan_SubGrade:C5,0.0031,20002,gbc
+24,Loan_SubGrade:D1,0.0011,20002,gbc
+25,Loan_SubGrade:D2,0.0091,20002,gbc
+26,Loan_SubGrade:D3,0.0092,20002,gbc
+27,Loan_SubGrade:D4,0.0088,20002,gbc
+28,Loan_SubGrade:D5,0.0097,20002,gbc
+29,Loan_SubGrade:E1,0.0006,20002,gbc
+30,Loan_SubGrade:E2,0.0005,20002,gbc
+31,Loan_SubGrade:E3,0.0031,20002,gbc
+32,Loan_SubGrade:E4,0.0035,20002,gbc
+33,Loan_SubGrade:E5,0.0057,20002,gbc
+34,Loan_SubGrade:F1,0.0009,20002,gbc
+35,Loan_SubGrade:F2,0.0002,20002,gbc
+36,Loan_SubGrade:F3,0.0003,20002,gbc
+37,Loan_SubGrade:F4,0.0003,20002,gbc
+38,Loan_SubGrade:F5,0.0002,20002,gbc
+39,Loan_SubGrade:G1,0.0,20002,gbc
+40,Loan_SubGrade:G2,0.0,20002,gbc
+41,Loan_SubGrade:G3,0.0002,20002,gbc
+42,Loan_SubGrade:G4,0.0,20002,gbc
+43,Loan_SubGrade:G5,0.0,20002,gbc
+44,Employment_Length:1 year,0.0002,20002,gbc
+45,Employment_Length:10+ years,0.0,20002,gbc
+46,Employment_Length:2 years,0.0001,20002,gbc
+47,Employment_Length:3 years,0.0002,20002,gbc
+48,Employment_Length:4 years,0.0001,20002,gbc
+49,Employment_Length:5 years,0.0001,20002,gbc
+50,Employment_Length:6 years,0.0001,20002,gbc
+51,Employment_Length:7 years,0.0003,20002,gbc
+52,Employment_Length:8 years,0.0003,20002,gbc
+53,Employment_Length:9 years,0.0002,20002,gbc
+54,Employment_Length:< 1 year,0.0004,20002,gbc
+55,Employment_Length:unknown,0.0018,20002,gbc
+56,Home_Ownership:ANY,0.0,20002,gbc
+57,Home_Ownership:MORTGAGE,0.0148,20002,gbc
+58,Home_Ownership:OWN,0.0002,20002,gbc
+59,Home_Ownership:RENT,0.0006,20002,gbc
+60,loan_amnt,0.0083,20002,gbc
+61,int_rate,0.6624,20002,gbc
+62,installment,0.0189,20002,gbc
+63,annual_inc,0.0073,20002,gbc
+64,inq_last_6mths,0.0034,20002,gbc
+65,delinq_2yrs,0.0011,20002,gbc
+66,mths_since_last_delinq,0.0011,20002,gbc
+67,open_acc,0.0022,20002,gbc
+68,total_acc,0.0052,20002,gbc
+69,mths_since_last_major_derog,0.0012,20002,gbc
+70,dti,0.0073,20002,gbc
+71,revol_bal,0.0055,20002,gbc
+72,tot_cur_bal,0.0113,20002,gbc
+73,open_il_24m,0.003,20002,gbc
+74,chargeoff_within_12_mths,0.0002,20002,gbc
+75,delinq_amnt,0.0,20002,gbc
+0,Term: 36 months,-42.5774,20002,logit
+1,Term: 60 months,-42.7425,20002,logit
+2,Loan_Grade:A,37.7753,20002,logit
+3,Loan_Grade:B,8.3215,20002,logit
+4,Loan_Grade:C,-17.099,20002,logit
+5,Loan_Grade:D,-52.0402,20002,logit
+6,Loan_Grade:E,-95.5812,20002,logit
+7,Loan_Grade:F,-138.9104,20002,logit
+8,Loan_Grade:G,-147.4552,20002,logit
+9,Loan_SubGrade:A1,15.8697,20002,logit
+10,Loan_SubGrade:A2,9.9825,20002,logit
+11,Loan_SubGrade:A3,5.1574,20002,logit
+12,Loan_SubGrade:A4,0.0,20002,logit
+13,Loan_SubGrade:A5,-5.244,20002,logit
+14,Loan_SubGrade:B1,11.9574,20002,logit
+15,Loan_SubGrade:B2,8.4745,20002,logit
+16,Loan_SubGrade:B3,3.9675,20002,logit
+17,Loan_SubGrade:B4,0.0,20002,logit
+18,Loan_SubGrade:B5,-9.1899,20002,logit
+19,Loan_SubGrade:C1,9.6579,20002,logit
+20,Loan_SubGrade:C2,2.24,20002,logit
+21,Loan_SubGrade:C3,-1.8849,20002,logit
+22,Loan_SubGrade:C4,-10.4906,20002,logit
+23,Loan_SubGrade:C5,-17.3954,20002,logit
+24,Loan_SubGrade:D1,8.7319,20002,logit
+25,Loan_SubGrade:D2,1.0596,20002,logit
+26,Loan_SubGrade:D3,-6.8083,20002,logit
+27,Loan_SubGrade:D4,-14.5744,20002,logit
+28,Loan_SubGrade:D5,-26.3308,20002,logit
+29,Loan_SubGrade:E1,9.0007,20002,logit
+30,Loan_SubGrade:E2,0.4881,20002,logit
+31,Loan_SubGrade:E3,-7.0538,20002,logit
+32,Loan_SubGrade:E4,-14.4877,20002,logit
+33,Loan_SubGrade:E5,-22.2963,20002,logit
+34,Loan_SubGrade:F1,7.3577,20002,logit
+35,Loan_SubGrade:F2,0.1043,20002,logit
+36,Loan_SubGrade:F3,-3.1234,20002,logit
+37,Loan_SubGrade:F4,-7.355,20002,logit
+38,Loan_SubGrade:F5,-8.2971,20002,logit
+39,Loan_SubGrade:G1,-0.9512,20002,logit
+40,Loan_SubGrade:G2,0.095,20002,logit
+41,Loan_SubGrade:G3,0.3515,20002,logit
+42,Loan_SubGrade:G4,-1.2357,20002,logit
+43,Loan_SubGrade:G5,-2.0725,20002,logit
+44,Employment_Length:1 year,-0.0669,20002,logit
+45,Employment_Length:10+ years,-0.0062,20002,logit
+46,Employment_Length:2 years,-0.036,20002,logit
+47,Employment_Length:3 years,0.0,20002,logit
+48,Employment_Length:4 years,-0.051,20002,logit
+49,Employment_Length:5 years,0.0,20002,logit
+50,Employment_Length:6 years,0.1776,20002,logit
+51,Employment_Length:7 years,-0.0279,20002,logit
+52,Employment_Length:8 years,0.0,20002,logit
+53,Employment_Length:9 years,0.1143,20002,logit
+54,Employment_Length:< 1 year,0.0469,20002,logit
+55,Employment_Length:unknown,-0.5277,20002,logit
+56,Home_Ownership:ANY,0.0,20002,logit
+57,Home_Ownership:MORTGAGE,-1.9079,20002,logit
+58,Home_Ownership:OWN,-2.1887,20002,logit
+59,Home_Ownership:RENT,-2.323,20002,logit
+60,loan_amnt,0.0,20002,logit
+61,int_rate,7.991,20002,logit
+62,installment,-0.0016,20002,logit
+63,annual_inc,0.0,20002,logit
+64,inq_last_6mths,-0.0959,20002,logit
+65,delinq_2yrs,-0.0461,20002,logit
+66,mths_since_last_delinq,-0.0001,20002,logit
+67,open_acc,-0.008,20002,logit
+68,total_acc,0.0102,20002,logit
+69,mths_since_last_major_derog,-0.0012,20002,logit
+70,dti,-0.0012,20002,logit
+71,revol_bal,-0.0,20002,logit
+72,tot_cur_bal,0.0,20002,logit
+73,open_il_24m,0.0544,20002,logit
+74,chargeoff_within_12_mths,0.0,20002,logit
+75,delinq_amnt,-0.0033,20002,logit
+0,Term: 36 months,0.0065,20003,rfc
+1,Term: 60 months,0.0062,20003,rfc
+2,Loan_Grade:A,0.0219,20003,rfc
+3,Loan_Grade:B,0.0109,20003,rfc
+4,Loan_Grade:C,0.0072,20003,rfc
+5,Loan_Grade:D,0.0071,20003,rfc
+6,Loan_Grade:E,0.0041,20003,rfc
+7,Loan_Grade:F,0.0022,20003,rfc
+8,Loan_Grade:G,0.0008,20003,rfc
+9,Loan_SubGrade:A1,0.0035,20003,rfc
+10,Loan_SubGrade:A2,0.0016,20003,rfc
+11,Loan_SubGrade:A3,0.0031,20003,rfc
+12,Loan_SubGrade:A4,0.0026,20003,rfc
+13,Loan_SubGrade:A5,0.0027,20003,rfc
+14,Loan_SubGrade:B1,0.0051,20003,rfc
+15,Loan_SubGrade:B2,0.0068,20003,rfc
+16,Loan_SubGrade:B3,0.0042,20003,rfc
+17,Loan_SubGrade:B4,0.0047,20003,rfc
+18,Loan_SubGrade:B5,0.0061,20003,rfc
+19,Loan_SubGrade:C1,0.0068,20003,rfc
+20,Loan_SubGrade:C2,0.0046,20003,rfc
+21,Loan_SubGrade:C3,0.0047,20003,rfc
+22,Loan_SubGrade:C4,0.0054,20003,rfc
+23,Loan_SubGrade:C5,0.0044,20003,rfc
+24,Loan_SubGrade:D1,0.0037,20003,rfc
+25,Loan_SubGrade:D2,0.0031,20003,rfc
+26,Loan_SubGrade:D3,0.003,20003,rfc
+27,Loan_SubGrade:D4,0.0028,20003,rfc
+28,Loan_SubGrade:D5,0.0036,20003,rfc
+29,Loan_SubGrade:E1,0.0015,20003,rfc
+30,Loan_SubGrade:E2,0.0012,20003,rfc
+31,Loan_SubGrade:E3,0.0017,20003,rfc
+32,Loan_SubGrade:E4,0.0015,20003,rfc
+33,Loan_SubGrade:E5,0.0014,20003,rfc
+34,Loan_SubGrade:F1,0.0006,20003,rfc
+35,Loan_SubGrade:F2,0.0003,20003,rfc
+36,Loan_SubGrade:F3,0.0004,20003,rfc
+37,Loan_SubGrade:F4,0.0004,20003,rfc
+38,Loan_SubGrade:F5,0.0003,20003,rfc
+39,Loan_SubGrade:G1,0.0004,20003,rfc
+40,Loan_SubGrade:G2,0.0001,20003,rfc
+41,Loan_SubGrade:G3,0.0001,20003,rfc
+42,Loan_SubGrade:G4,0.0001,20003,rfc
+43,Loan_SubGrade:G5,0.0,20003,rfc
+44,Employment_Length:1 year,0.0049,20003,rfc
+45,Employment_Length:10+ years,0.0092,20003,rfc
+46,Employment_Length:2 years,0.0055,20003,rfc
+47,Employment_Length:3 years,0.0054,20003,rfc
+48,Employment_Length:4 years,0.0045,20003,rfc
+49,Employment_Length:5 years,0.0046,20003,rfc
+50,Employment_Length:6 years,0.0037,20003,rfc
+51,Employment_Length:7 years,0.0032,20003,rfc
+52,Employment_Length:8 years,0.0036,20003,rfc
+53,Employment_Length:9 years,0.0023,20003,rfc
+54,Employment_Length:< 1 year,0.0059,20003,rfc
+55,Employment_Length:unknown,0.0072,20003,rfc
+56,Home_Ownership:ANY,0.0001,20003,rfc
+57,Home_Ownership:MORTGAGE,0.0114,20003,rfc
+58,Home_Ownership:OWN,0.0046,20003,rfc
+59,Home_Ownership:RENT,0.0101,20003,rfc
+60,loan_amnt,0.052,20003,rfc
+61,int_rate,0.1919,20003,rfc
+62,installment,0.0665,20003,rfc
+63,annual_inc,0.0555,20003,rfc
+64,inq_last_6mths,0.0186,20003,rfc
+65,delinq_2yrs,0.0112,20003,rfc
+66,mths_since_last_delinq,0.031,20003,rfc
+67,open_acc,0.0419,20003,rfc
+68,total_acc,0.0504,20003,rfc
+69,mths_since_last_major_derog,0.0205,20003,rfc
+70,dti,0.0624,20003,rfc
+71,revol_bal,0.058,20003,rfc
+72,tot_cur_bal,0.0639,20003,rfc
+73,open_il_24m,0.0296,20003,rfc
+74,chargeoff_within_12_mths,0.001,20003,rfc
+75,delinq_amnt,0.0002,20003,rfc
+0,Term: 36 months,0.0001,20003,gbc
+1,Term: 60 months,0.0,20003,gbc
+2,Loan_Grade:A,0.0393,20003,gbc
+3,Loan_Grade:B,0.0199,20003,gbc
+4,Loan_Grade:C,0.017,20003,gbc
+5,Loan_Grade:D,0.0017,20003,gbc
+6,Loan_Grade:E,0.0044,20003,gbc
+7,Loan_Grade:F,0.0017,20003,gbc
+8,Loan_Grade:G,0.0008,20003,gbc
+9,Loan_SubGrade:A1,0.0002,20003,gbc
+10,Loan_SubGrade:A2,0.0,20003,gbc
+11,Loan_SubGrade:A3,0.0002,20003,gbc
+12,Loan_SubGrade:A4,0.01,20003,gbc
+13,Loan_SubGrade:A5,0.0006,20003,gbc
+14,Loan_SubGrade:B1,0.005,20003,gbc
+15,Loan_SubGrade:B2,0.0138,20003,gbc
+16,Loan_SubGrade:B3,0.0067,20003,gbc
+17,Loan_SubGrade:B4,0.014,20003,gbc
+18,Loan_SubGrade:B5,0.0323,20003,gbc
+19,Loan_SubGrade:C1,0.0008,20003,gbc
+20,Loan_SubGrade:C2,0.009,20003,gbc
+21,Loan_SubGrade:C3,0.0093,20003,gbc
+22,Loan_SubGrade:C4,0.0076,20003,gbc
+23,Loan_SubGrade:C5,0.0008,20003,gbc
+24,Loan_SubGrade:D1,0.0031,20003,gbc
+25,Loan_SubGrade:D2,0.0138,20003,gbc
+26,Loan_SubGrade:D3,0.0087,20003,gbc
+27,Loan_SubGrade:D4,0.0033,20003,gbc
+28,Loan_SubGrade:D5,0.0092,20003,gbc
+29,Loan_SubGrade:E1,0.0006,20003,gbc
+30,Loan_SubGrade:E2,0.0016,20003,gbc
+31,Loan_SubGrade:E3,0.0014,20003,gbc
+32,Loan_SubGrade:E4,0.003,20003,gbc
+33,Loan_SubGrade:E5,0.004,20003,gbc
+34,Loan_SubGrade:F1,0.0007,20003,gbc
+35,Loan_SubGrade:F2,0.0001,20003,gbc
+36,Loan_SubGrade:F3,0.0003,20003,gbc
+37,Loan_SubGrade:F4,0.0002,20003,gbc
+38,Loan_SubGrade:F5,0.0001,20003,gbc
+39,Loan_SubGrade:G1,0.0,20003,gbc
+40,Loan_SubGrade:G2,0.0,20003,gbc
+41,Loan_SubGrade:G3,0.0,20003,gbc
+42,Loan_SubGrade:G4,0.0,20003,gbc
+43,Loan_SubGrade:G5,0.0,20003,gbc
+44,Employment_Length:1 year,0.0,20003,gbc
+45,Employment_Length:10+ years,0.0004,20003,gbc
+46,Employment_Length:2 years,0.0,20003,gbc
+47,Employment_Length:3 years,0.0003,20003,gbc
+48,Employment_Length:4 years,0.0001,20003,gbc
+49,Employment_Length:5 years,0.0001,20003,gbc
+50,Employment_Length:6 years,0.0001,20003,gbc
+51,Employment_Length:7 years,0.0005,20003,gbc
+52,Employment_Length:8 years,0.0004,20003,gbc
+53,Employment_Length:9 years,0.0001,20003,gbc
+54,Employment_Length:< 1 year,0.0002,20003,gbc
+55,Employment_Length:unknown,0.0018,20003,gbc
+56,Home_Ownership:ANY,0.0,20003,gbc
+57,Home_Ownership:MORTGAGE,0.0156,20003,gbc
+58,Home_Ownership:OWN,0.0001,20003,gbc
+59,Home_Ownership:RENT,0.0004,20003,gbc
+60,loan_amnt,0.0094,20003,gbc
+61,int_rate,0.6558,20003,gbc
+62,installment,0.0198,20003,gbc
+63,annual_inc,0.0063,20003,gbc
+64,inq_last_6mths,0.0033,20003,gbc
+65,delinq_2yrs,0.0015,20003,gbc
+66,mths_since_last_delinq,0.0013,20003,gbc
+67,open_acc,0.0021,20003,gbc
+68,total_acc,0.0054,20003,gbc
+69,mths_since_last_major_derog,0.0014,20003,gbc
+70,dti,0.0087,20003,gbc
+71,revol_bal,0.0046,20003,gbc
+72,tot_cur_bal,0.0106,20003,gbc
+73,open_il_24m,0.004,20003,gbc
+74,chargeoff_within_12_mths,0.0003,20003,gbc
+75,delinq_amnt,0.0,20003,gbc
+0,Term: 36 months,-32.214,20003,logit
+1,Term: 60 months,-32.317,20003,logit
+2,Loan_Grade:A,29.1654,20003,logit
+3,Loan_Grade:B,2.3719,20003,logit
+4,Loan_Grade:C,-18.3293,20003,logit
+5,Loan_Grade:D,-51.1062,20003,logit
+6,Loan_Grade:E,-90.8858,20003,logit
+7,Loan_Grade:F,-130.3321,20003,logit
+8,Loan_Grade:G,-138.2952,20003,logit
+9,Loan_SubGrade:A1,14.0258,20003,logit
+10,Loan_SubGrade:A2,8.892,20003,logit
+11,Loan_SubGrade:A3,4.8035,20003,logit
+12,Loan_SubGrade:A4,0.0,20003,logit
+13,Loan_SubGrade:A5,-4.8751,20003,logit
+14,Loan_SubGrade:B1,10.8788,20003,logit
+15,Loan_SubGrade:B2,7.8168,20003,logit
+16,Loan_SubGrade:B3,3.6517,20003,logit
+17,Loan_SubGrade:B4,0.0,20003,logit
+18,Loan_SubGrade:B5,-8.0759,20003,logit
+19,Loan_SubGrade:C1,6.7219,20003,logit
+20,Loan_SubGrade:C2,0.0144,20003,logit
+21,Loan_SubGrade:C3,-3.8703,20003,logit
+22,Loan_SubGrade:C4,-11.6143,20003,logit
+23,Loan_SubGrade:C5,-17.8286,20003,logit
+24,Loan_SubGrade:D1,6.9618,20003,logit
+25,Loan_SubGrade:D2,0.0,20003,logit
+26,Loan_SubGrade:D3,-7.0443,20003,logit
+27,Loan_SubGrade:D4,-14.0011,20003,logit
+28,Loan_SubGrade:D5,-24.6896,20003,logit
+29,Loan_SubGrade:E1,7.6205,20003,logit
+30,Loan_SubGrade:E2,0.0013,20003,logit
+31,Loan_SubGrade:E3,-6.9838,20003,logit
+32,Loan_SubGrade:E4,-13.451,20003,logit
+33,Loan_SubGrade:E5,-20.3746,20003,logit
+34,Loan_SubGrade:F1,6.5655,20003,logit
+35,Loan_SubGrade:F2,0.0,20003,logit
+36,Loan_SubGrade:F3,-3.1312,20003,logit
+37,Loan_SubGrade:F4,-6.4228,20003,logit
+38,Loan_SubGrade:F5,-7.8456,20003,logit
+39,Loan_SubGrade:G1,-0.9409,20003,logit
+40,Loan_SubGrade:G2,0.4399,20003,logit
+41,Loan_SubGrade:G3,0.0,20003,logit
+42,Loan_SubGrade:G4,-0.3997,20003,logit
+43,Loan_SubGrade:G5,-1.4973,20003,logit
+44,Employment_Length:1 year,0.0,20003,logit
+45,Employment_Length:10+ years,0.0111,20003,logit
+46,Employment_Length:2 years,-0.0283,20003,logit
+47,Employment_Length:3 years,-0.0122,20003,logit
+48,Employment_Length:4 years,-0.0376,20003,logit
+49,Employment_Length:5 years,-0.0222,20003,logit
+50,Employment_Length:6 years,0.0795,20003,logit
+51,Employment_Length:7 years,-0.0517,20003,logit
+52,Employment_Length:8 years,0.0,20003,logit
+53,Employment_Length:9 years,-0.0191,20003,logit
+54,Employment_Length:< 1 year,0.1443,20003,logit
+55,Employment_Length:unknown,-0.478,20003,logit
+56,Home_Ownership:ANY,0.0,20003,logit
+57,Home_Ownership:MORTGAGE,-16.7187,20003,logit
+58,Home_Ownership:OWN,-16.9911,20003,logit
+59,Home_Ownership:RENT,-17.1323,20003,logit
+60,loan_amnt,0.0,20003,logit
+61,int_rate,7.208,20003,logit
+62,installment,-0.0011,20003,logit
+63,annual_inc,0.0,20003,logit
+64,inq_last_6mths,-0.0977,20003,logit
+65,delinq_2yrs,-0.0999,20003,logit
+66,mths_since_last_delinq,0.0019,20003,logit
+67,open_acc,-0.0072,20003,logit
+68,total_acc,0.0108,20003,logit
+69,mths_since_last_major_derog,-0.0013,20003,logit
+70,dti,-0.002,20003,logit
+71,revol_bal,-0.0,20003,logit
+72,tot_cur_bal,0.0,20003,logit
+73,open_il_24m,0.0381,20003,logit
+74,chargeoff_within_12_mths,0.0822,20003,logit
+75,delinq_amnt,-0.0043,20003,logit
+0,Term: 36 months,0.0055,20004,rfc
+1,Term: 60 months,0.0061,20004,rfc
+2,Loan_Grade:A,0.0154,20004,rfc
+3,Loan_Grade:B,0.0087,20004,rfc
+4,Loan_Grade:C,0.0059,20004,rfc
+5,Loan_Grade:D,0.0065,20004,rfc
+6,Loan_Grade:E,0.0038,20004,rfc
+7,Loan_Grade:F,0.0021,20004,rfc
+8,Loan_Grade:G,0.001,20004,rfc
+9,Loan_SubGrade:A1,0.0042,20004,rfc
+10,Loan_SubGrade:A2,0.0025,20004,rfc
+11,Loan_SubGrade:A3,0.0021,20004,rfc
+12,Loan_SubGrade:A4,0.003,20004,rfc
+13,Loan_SubGrade:A5,0.0025,20004,rfc
+14,Loan_SubGrade:B1,0.0051,20004,rfc
+15,Loan_SubGrade:B2,0.0056,20004,rfc
+16,Loan_SubGrade:B3,0.004,20004,rfc
+17,Loan_SubGrade:B4,0.0054,20004,rfc
+18,Loan_SubGrade:B5,0.0077,20004,rfc
+19,Loan_SubGrade:C1,0.006,20004,rfc
+20,Loan_SubGrade:C2,0.0047,20004,rfc
+21,Loan_SubGrade:C3,0.0049,20004,rfc
+22,Loan_SubGrade:C4,0.0051,20004,rfc
+23,Loan_SubGrade:C5,0.0044,20004,rfc
+24,Loan_SubGrade:D1,0.0046,20004,rfc
+25,Loan_SubGrade:D2,0.0033,20004,rfc
+26,Loan_SubGrade:D3,0.0029,20004,rfc
+27,Loan_SubGrade:D4,0.0033,20004,rfc
+28,Loan_SubGrade:D5,0.003,20004,rfc
+29,Loan_SubGrade:E1,0.0019,20004,rfc
+30,Loan_SubGrade:E2,0.0013,20004,rfc
+31,Loan_SubGrade:E3,0.0017,20004,rfc
+32,Loan_SubGrade:E4,0.0014,20004,rfc
+33,Loan_SubGrade:E5,0.0016,20004,rfc
+34,Loan_SubGrade:F1,0.0009,20004,rfc
+35,Loan_SubGrade:F2,0.0005,20004,rfc
+36,Loan_SubGrade:F3,0.0003,20004,rfc
+37,Loan_SubGrade:F4,0.0004,20004,rfc
+38,Loan_SubGrade:F5,0.0002,20004,rfc
+39,Loan_SubGrade:G1,0.0005,20004,rfc
+40,Loan_SubGrade:G2,0.0001,20004,rfc
+41,Loan_SubGrade:G3,0.0,20004,rfc
+42,Loan_SubGrade:G4,0.0,20004,rfc
+43,Loan_SubGrade:G5,0.0001,20004,rfc
+44,Employment_Length:1 year,0.005,20004,rfc
+45,Employment_Length:10+ years,0.0092,20004,rfc
+46,Employment_Length:2 years,0.0057,20004,rfc
+47,Employment_Length:3 years,0.0058,20004,rfc
+48,Employment_Length:4 years,0.0048,20004,rfc
+49,Employment_Length:5 years,0.0047,20004,rfc
+50,Employment_Length:6 years,0.0038,20004,rfc
+51,Employment_Length:7 years,0.0032,20004,rfc
+52,Employment_Length:8 years,0.0031,20004,rfc
+53,Employment_Length:9 years,0.0026,20004,rfc
+54,Employment_Length:< 1 year,0.0057,20004,rfc
+55,Employment_Length:unknown,0.0063,20004,rfc
+56,Home_Ownership:ANY,0.0001,20004,rfc
+57,Home_Ownership:MORTGAGE,0.0104,20004,rfc
+58,Home_Ownership:OWN,0.0055,20004,rfc
+59,Home_Ownership:RENT,0.0079,20004,rfc
+60,loan_amnt,0.0506,20004,rfc
+61,int_rate,0.1997,20004,rfc
+62,installment,0.0645,20004,rfc
+63,annual_inc,0.057,20004,rfc
+64,inq_last_6mths,0.0197,20004,rfc
+65,delinq_2yrs,0.0113,20004,rfc
+66,mths_since_last_delinq,0.0319,20004,rfc
+67,open_acc,0.0423,20004,rfc
+68,total_acc,0.052,20004,rfc
+69,mths_since_last_major_derog,0.0204,20004,rfc
+70,dti,0.0613,20004,rfc
+71,revol_bal,0.0595,20004,rfc
+72,tot_cur_bal,0.064,20004,rfc
+73,open_il_24m,0.0307,20004,rfc
+74,chargeoff_within_12_mths,0.0009,20004,rfc
+75,delinq_amnt,0.0002,20004,rfc
+0,Term: 36 months,0.0001,20004,gbc
+1,Term: 60 months,0.0001,20004,gbc
+2,Loan_Grade:A,0.0402,20004,gbc
+3,Loan_Grade:B,0.0165,20004,gbc
+4,Loan_Grade:C,0.0327,20004,gbc
+5,Loan_Grade:D,0.0036,20004,gbc
+6,Loan_Grade:E,0.0022,20004,gbc
+7,Loan_Grade:F,0.0024,20004,gbc
+8,Loan_Grade:G,0.0011,20004,gbc
+9,Loan_SubGrade:A1,0.0,20004,gbc
+10,Loan_SubGrade:A2,0.0,20004,gbc
+11,Loan_SubGrade:A3,0.0,20004,gbc
+12,Loan_SubGrade:A4,0.0037,20004,gbc
+13,Loan_SubGrade:A5,0.0002,20004,gbc
+14,Loan_SubGrade:B1,0.0042,20004,gbc
+15,Loan_SubGrade:B2,0.0135,20004,gbc
+16,Loan_SubGrade:B3,0.0077,20004,gbc
+17,Loan_SubGrade:B4,0.0075,20004,gbc
+18,Loan_SubGrade:B5,0.0244,20004,gbc
+19,Loan_SubGrade:C1,0.0039,20004,gbc
+20,Loan_SubGrade:C2,0.0176,20004,gbc
+21,Loan_SubGrade:C3,0.0142,20004,gbc
+22,Loan_SubGrade:C4,0.008,20004,gbc
+23,Loan_SubGrade:C5,0.0027,20004,gbc
+24,Loan_SubGrade:D1,0.0005,20004,gbc
+25,Loan_SubGrade:D2,0.0025,20004,gbc
+26,Loan_SubGrade:D3,0.0075,20004,gbc
+27,Loan_SubGrade:D4,0.0075,20004,gbc
+28,Loan_SubGrade:D5,0.0074,20004,gbc
+29,Loan_SubGrade:E1,0.0009,20004,gbc
+30,Loan_SubGrade:E2,0.0023,20004,gbc
+31,Loan_SubGrade:E3,0.0025,20004,gbc
+32,Loan_SubGrade:E4,0.0026,20004,gbc
+33,Loan_SubGrade:E5,0.0053,20004,gbc
+34,Loan_SubGrade:F1,0.0006,20004,gbc
+35,Loan_SubGrade:F2,0.0002,20004,gbc
+36,Loan_SubGrade:F3,0.0002,20004,gbc
+37,Loan_SubGrade:F4,0.0002,20004,gbc
+38,Loan_SubGrade:F5,0.0001,20004,gbc
+39,Loan_SubGrade:G1,0.0,20004,gbc
+40,Loan_SubGrade:G2,0.0,20004,gbc
+41,Loan_SubGrade:G3,0.0,20004,gbc
+42,Loan_SubGrade:G4,0.0,20004,gbc
+43,Loan_SubGrade:G5,0.0,20004,gbc
+44,Employment_Length:1 year,0.0003,20004,gbc
+45,Employment_Length:10+ years,0.0001,20004,gbc
+46,Employment_Length:2 years,0.0001,20004,gbc
+47,Employment_Length:3 years,0.0003,20004,gbc
+48,Employment_Length:4 years,0.0001,20004,gbc
+49,Employment_Length:5 years,0.0002,20004,gbc
+50,Employment_Length:6 years,0.0,20004,gbc
+51,Employment_Length:7 years,0.0003,20004,gbc
+52,Employment_Length:8 years,0.0002,20004,gbc
+53,Employment_Length:9 years,0.0002,20004,gbc
+54,Employment_Length:< 1 year,0.0004,20004,gbc
+55,Employment_Length:unknown,0.0019,20004,gbc
+56,Home_Ownership:ANY,0.0,20004,gbc
+57,Home_Ownership:MORTGAGE,0.0131,20004,gbc
+58,Home_Ownership:OWN,0.0005,20004,gbc
+59,Home_Ownership:RENT,0.0007,20004,gbc
+60,loan_amnt,0.0069,20004,gbc
+61,int_rate,0.6488,20004,gbc
+62,installment,0.0219,20004,gbc
+63,annual_inc,0.0075,20004,gbc
+64,inq_last_6mths,0.0035,20004,gbc
+65,delinq_2yrs,0.0016,20004,gbc
+66,mths_since_last_delinq,0.0014,20004,gbc
+67,open_acc,0.0018,20004,gbc
+68,total_acc,0.0058,20004,gbc
+69,mths_since_last_major_derog,0.0018,20004,gbc
+70,dti,0.0089,20004,gbc
+71,revol_bal,0.0061,20004,gbc
+72,tot_cur_bal,0.0142,20004,gbc
+73,open_il_24m,0.0042,20004,gbc
+74,chargeoff_within_12_mths,0.0003,20004,gbc
+75,delinq_amnt,0.0,20004,gbc
+0,Term: 36 months,-40.7507,20004,logit
+1,Term: 60 months,-40.8726,20004,logit
+2,Loan_Grade:A,35.9616,20004,logit
+3,Loan_Grade:B,6.9794,20004,logit
+4,Loan_Grade:C,-17.2359,20004,logit
+5,Loan_Grade:D,-51.9601,20004,logit
+6,Loan_Grade:E,-94.9831,20004,logit
+7,Loan_Grade:F,-137.7554,20004,logit
+8,Loan_Grade:G,-147.4363,20004,logit
+9,Loan_SubGrade:A1,15.1931,20004,logit
+10,Loan_SubGrade:A2,9.9835,20004,logit
+11,Loan_SubGrade:A3,5.1526,20004,logit
+12,Loan_SubGrade:A4,0.0,20004,logit
+13,Loan_SubGrade:A5,-5.1446,20004,logit
+14,Loan_SubGrade:B1,11.774,20004,logit
+15,Loan_SubGrade:B2,8.4045,20004,logit
+16,Loan_SubGrade:B3,3.9153,20004,logit
+17,Loan_SubGrade:B4,0.0,20004,logit
+18,Loan_SubGrade:B5,-8.9266,20004,logit
+19,Loan_SubGrade:C1,8.8325,20004,logit
+20,Loan_SubGrade:C2,1.4826,20004,logit
+21,Loan_SubGrade:C3,-2.7353,20004,logit
+22,Loan_SubGrade:C4,-11.1821,20004,logit
+23,Loan_SubGrade:C5,-17.9451,20004,logit
+24,Loan_SubGrade:D1,7.9891,20004,logit
+25,Loan_SubGrade:D2,0.509,20004,logit
+26,Loan_SubGrade:D3,-7.1277,20004,logit
+27,Loan_SubGrade:D4,-14.8519,20004,logit
+28,Loan_SubGrade:D5,-26.4308,20004,logit
+29,Loan_SubGrade:E1,8.281,20004,logit
+30,Loan_SubGrade:E2,0.0997,20004,logit
+31,Loan_SubGrade:E3,-7.4313,20004,logit
+32,Loan_SubGrade:E4,-14.5753,20004,logit
+33,Loan_SubGrade:E5,-22.2526,20004,logit
+34,Loan_SubGrade:F1,6.7988,20004,logit
+35,Loan_SubGrade:F2,0.0004,20004,logit
+36,Loan_SubGrade:F3,-3.3594,20004,logit
+37,Loan_SubGrade:F4,-7.3975,20004,logit
+38,Loan_SubGrade:F5,-8.6116,20004,logit
+39,Loan_SubGrade:G1,-0.12,20004,logit
+40,Loan_SubGrade:G2,0.5402,20004,logit
+41,Loan_SubGrade:G3,0.0,20004,logit
+42,Loan_SubGrade:G4,0.0,20004,logit
+43,Loan_SubGrade:G5,-1.168,20004,logit
+44,Employment_Length:1 year,-0.0746,20004,logit
+45,Employment_Length:10+ years,0.0624,20004,logit
+46,Employment_Length:2 years,0.0,20004,logit
+47,Employment_Length:3 years,-0.0006,20004,logit
+48,Employment_Length:4 years,-0.0169,20004,logit
+49,Employment_Length:5 years,0.0,20004,logit
+50,Employment_Length:6 years,0.1977,20004,logit
+51,Employment_Length:7 years,-0.0669,20004,logit
+52,Employment_Length:8 years,0.0,20004,logit
+53,Employment_Length:9 years,0.0,20004,logit
+54,Employment_Length:< 1 year,0.1603,20004,logit
+55,Employment_Length:unknown,-0.493,20004,logit
+56,Home_Ownership:ANY,0.0,20004,logit
+57,Home_Ownership:MORTGAGE,-5.3969,20004,logit
+58,Home_Ownership:OWN,-5.6775,20004,logit
+59,Home_Ownership:RENT,-5.8227,20004,logit
+60,loan_amnt,0.0,20004,logit
+61,int_rate,7.8701,20004,logit
+62,installment,-0.0014,20004,logit
+63,annual_inc,0.0,20004,logit
+64,inq_last_6mths,-0.0676,20004,logit
+65,delinq_2yrs,-0.0579,20004,logit
+66,mths_since_last_delinq,0.0011,20004,logit
+67,open_acc,-0.0064,20004,logit
+68,total_acc,0.0108,20004,logit
+69,mths_since_last_major_derog,-0.002,20004,logit
+70,dti,-0.0011,20004,logit
+71,revol_bal,-0.0,20004,logit
+72,tot_cur_bal,0.0,20004,logit
+73,open_il_24m,0.0336,20004,logit
+74,chargeoff_within_12_mths,-0.3213,20004,logit
+75,delinq_amnt,-0.0016,20004,logit

@@ -25,12 +25,13 @@ from sklearn.model_selection import (GridSearchCV, StratifiedKFold,
 
 
 
-def load_locally(file_name):
+def load_locally(file_name, dev_type = 'stochastic'):
     file = open(file_name,'rb')
     temp = pickle.load(file)
     if file_name == './data/gridsearch.pkl':
+
         temp.model_paths = {5000: [('RFC',
-                                './models/5000/RFC.pkl'),
+                                f'./models/5000/RFC.pkl'),
                                 ('GBC', './models/5000/GBC.pkl'),
                                 ('LR', './models/5000/LR.pkl')],
                                 10000: [('RFC',
@@ -49,6 +50,28 @@ def load_locally(file_name):
                                 './models/80000/RFC.pkl'),
                                 ('GBC', './models/80000/GBC.pkl'),
                                 ('LR', './models/80000/LR.pkl')]}
+    
+    if file_name == './data_stochastic/gridsearch.pkl':
+        temp.model_paths = {20000: [('RFC',
+                                f'./models_stochastic/20000-0/RFC.pkl'),
+                                ('GBC', './models_stochastic/20000-0/GBC.pkl'),
+                                ('LR', './models_stochastic/20000-0/LR.pkl')],
+                                20001: [('RFC',
+                                './models_stochastic/20000-1/RFC.pkl'),
+                                ('GBC', './models_stochastic/20000-1/GBC.pkl'),
+                                ('LR', './models_stochastic/20000-1/LR.pkl')],
+                                20002: [('RFC',
+                                './models_stochastic/20000-2/RFC.pkl'),
+                                ('GBC', './models_stochastic/20000-2/GBC.pkl'),
+                                ('LR', './models_stochastic/20000-2/LR.pkl')],
+                                20003: [('RFC',
+                                './models_stochastic/20000-3/RFC.pkl'),
+                                ('GBC', './models_stochastic/20000-3/GBC.pkl'),
+                                ('LR', './models_stochastic/20000-3/LR.pkl')],
+                                20004: [('RFC',
+                                './models_stochastic/20000-4/RFC.pkl'),
+                                ('GBC', './models_stochastic/20000-4/GBC.pkl'),
+                                ('LR', './models_stochastic/20000-4/LR.pkl')]}
     return temp
 
 
@@ -85,8 +108,8 @@ def plot_confusion_matrix(cm,
                  color="white" if cm[i, j] > thresh else "black")
 
     plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    # plt.ylabel('True label')
+    # plt.xlabel('Predicted label')
 
 
 
@@ -144,6 +167,7 @@ def display_sklearn_feature_importance(gs_object, models, num_obs, n_features):
     plt.title('Logistic Regression - Coefficients Top&Bottom {}'.format(
         int(n_features / 2)))
     plt.show()
+    
 
 
 def display_side_by_side(*args):
@@ -190,8 +214,11 @@ def load_models_to_mem(size, gs_object):
     sample size is a list of scalars
     '''
     model_dict = {}
-    for i in size:
-        models = fetch_models(i, gs_object)
+    for i,j in gs_object.model_paths.items():
+        models = []
+        for k in j:
+            file = open(k[1],'rb')
+            models.append((k[0], pickle.load(file)))
         model_dict[i] = models
     print('models loaded into memory')
     return model_dict

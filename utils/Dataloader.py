@@ -29,6 +29,7 @@ def get_cols_of_interest(file='./data/columnsOfInterest.txt'):
     return columns
 
 
+
 class Dataloader:
     '''
     Class to load\\transform\\encode data as needed for SHAP. 
@@ -118,7 +119,10 @@ class Dataloader:
         self.unrolled_features = self.cat_features_unrolled + list(
             self.continuous_features)
 
-    def _load_data(self, num_samples):
+    def _load_data(self, num_samples, random = False):
+        '''
+        use random = True if exploring with samples of same size, else, use False for variable sample size
+        '''
         if check_existence(self.destination):
             iter_csv = pd.read_csv(self.file,
                                    iterator=True,
@@ -131,16 +135,21 @@ class Dataloader:
 
             #Partition into equally sized sets and concatenate
             split = int(num_samples / 2)
-            self.pos = self.df[self.df['loan_status'] == 'Fully Paid'][:split]
-            self.neg = self.df[self.df['loan_status'] == 'Charged Off'][:split]
+            
+            #Used for different same-sized samples
+            if random:
+                self.pos = self.df[self.df['loan_status'] == 'Fully Paid'].sample(split)
+                self.neg = self.df[self.df['loan_status'] == 'Charged Off'].sample(split)
+            else:
+                self.pos = self.df[self.df['loan_status'] == 'Fully Paid'][:split]
+                self.neg = self.df[self.df['loan_status'] == 'Charged Off'][:split]
+                
             self.df = pd.concat([self.pos, self.neg])
-
-
             self.df = self.df[self.columns]  #subset on cols
         
 
-    def _clean_data(self, num_samples):
-        self._load_data(num_samples)
+    def _clean_data(self, num_samples, random = False):
+        self._load_data(num_samples, random = random)
         self.df['emp_length'].fillna(value='unknown',
                                      inplace=True)  #error handling on NAN
         self.df.fillna(value=0, inplace=True) 
@@ -149,7 +158,7 @@ class Dataloader:
         self._transform_y()
         print('data transformation complete')
 
-    def fetch_data(self, num_samples, train_size):
+    def fetch_data(self, num_samples, train_size, random = False):
         self._clean_data(num_samples)
 
         #tranf type + subsample
@@ -176,4 +185,3 @@ class Dataloader:
             self.X_train)  # Encode Training Set
         self.encoded_test = encoder.transform(self.X_test)
         return self.encoded_train, self.encoded_test, self.y_train, self.y_test, encoder, self.unrolled_features
-
