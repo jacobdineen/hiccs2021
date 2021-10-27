@@ -12,7 +12,7 @@ dash-daq==0.3.3
 dash-html-components==1.0.2
 dash-renderer==1.2.4
 dash-table==4.6.1
-dask==2.15.0
+dask==2021.10.0
 decorator==4.4.1
 defusedxml==0.6.0
 entrypoints==0.3
