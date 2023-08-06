@@ -75,7 +75,7 @@ shap==0.35.0
 six==1.14.0
 terminado==0.8.3
 testpath==0.4.4
-tornado==6.0.4
+tornado==6.3.2
 tqdm==4.43.0
 traitlets==4.3.3
 wcwidth==0.1.9
