@@ -7,7 +7,7 @@ colorlover==0.3.0
 cufflinks==0.17.3
 cycler==0.10.0
 dash==2.15.0
-dash-core-components==1.8.1
+dash-core-components==2.0.0
 dash-daq==0.3.3
 dash-html-components==1.0.2
 dash-renderer==1.2.4
